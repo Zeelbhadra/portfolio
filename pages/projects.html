@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <meta name="description" content="Selected analytics projects across pharma, e-commerce, and supply chain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav-logo">ZB</a>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="certifications.html" class="nav-link">Certifications</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="eyebrow page-hero-eyebrow">Selected work</p>
+    <h1>Projects that<br/><em>moved needles.</em></h1>
+    <p class="lead">Every project starts with a business question, not a dataset. Here's what happens when you take that seriously.</p>
+  </div>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <div class="container projects-full">
+      <div class="projects-full-grid">
+
+        <!-- PROJECT 1: SupplyLens -->
+        <article class="project-full-card reveal">
+          <div class="project-full-left">
+            <div class="project-meta" style="grid-column: unset; justify-content: flex-start;">
+              <span class="project-tag">Pharma · Supply Chain</span>
+              <span class="project-year" style="margin-left:auto;">May 2026</span>
+            </div>
+            <h2>SupplyLens - Procurement Risk Intelligence System</h2>
+            <p>A pharma manufacturer with no visibility into which of its 15 suppliers represented genuine risk. The question behind the question: how do you triage intervention in a portfolio with no existing risk framework?</p>
+            <p style="margin-top:1rem;">I structured a multi-dimensional risk framework across price volatility, delivery reliability, and quality, then built a 4-step agentic pipeline that autonomously classifies supplier risk and generates executive decision memos via LLM. Quarterly reporting went from days to on-demand.</p>
+            <div class="project-image-wrap">
+              <div class="project-img-placeholder" data-label="Add supplylens_screenshot.jpg to assets/">
+                <div class="project-image-wrap">
+                  <img src="../assets/supply_lens_dashboard.png" alt="SupplyLens dashboard" />
+                </div>
+              </div>
+            </div>
+            <div class="project-impact">
+              <span class="impact-badge">400+ POs analysed</span>
+              <span class="impact-badge">15 suppliers scored</span>
+              <span class="impact-badge">₹4.9 Cr intervention risk flagged</span>
+              <span class="impact-badge">4 Critical suppliers identified</span>
+            </div>
+            <div class="project-tools" style="margin-top:1rem;">
+              <span>Python</span><span>Pandas</span><span>Plotly</span><span>LLM Agents</span><span>Groq API</span><span>Risk Scoring</span>
+            </div>
+          </div>
+          <div class="project-full-links">
+            <a href="https://github.com/Zeelbhadra/SupplyLens" target="_blank" class="btn-primary" style="white-space:nowrap;">GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Beauty & Personal Care -->
+        <article class="project-full-card reveal">
+          <div class="project-full-left">
+            <div class="project-meta" style="grid-column: unset; justify-content: flex-start;">
+              <span class="project-tag">E-commerce · BI</span>
+              <span class="project-year" style="margin-left:auto;">May 2026</span>
+            </div>
+            <h2>Beauty & Personal Care - Revenue Leakage Analysis</h2>
+            <p>Revenue was flat despite 18% user growth. The obvious hypothesis was a demand problem. The real answer was a discount strategy problem, and finding that required reframing the business question before touching the data.</p>
+            <p style="margin-top:1rem;">I designed a LTV:CAC framework across acquisition channels, discovered that 55% of customers were acquired at a net loss, and quantified ₹1.32 Cr in revenue leakage driven by a 5.5× return rate gap between discount tiers. The output was an automated Power BI dashboard and a budget reallocation recommendation projecting 40–50% CAC reduction.</p>
+            <div class="project-image-wrap">
+              <div class="project-img-placeholder" data-label="Add ecommerce_screenshot.jpg to assets/">
+                <div class="project-image-wrap">
+                  <img src="../assets/beauty_dashboard.png" alt="Beauty and Personal CareE-commerce analytics dashboard" />
+                </div>
+              </div>
+            </div>
+            <div class="project-impact">
+              <span class="impact-badge">₹1.32 Cr leakage quantified</span>
+              <span class="impact-badge">₹29.6 L refund risk surfaced</span>
+              <span class="impact-badge">40–50% CAC reduction projected</span>
+              <span class="impact-badge">18 months of channel data</span>
+            </div>
+            <div class="project-tools" style="margin-top:1rem;">
+              <span>Power BI</span><span>DAX</span><span>SQL</span><span>Cohort Analysis</span><span>LTV:CAC</span><span>Star Schema</span>
+            </div>
+          </div>
+          <div class="project-full-links">
+            <a href="https://github.com/Zeelbhadra/Beauty-and-Personal-Care-E-Commerce-Analytics" target="_blank" class="btn-primary" style="white-space:nowrap;">GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Pharma Field Force -->
+        <article class="project-full-card reveal">
+          <div class="project-full-left">
+            <div class="project-meta" style="grid-column: unset; justify-content: flex-start;">
+              <span class="project-tag">Pharma · Sales Operations</span>
+              <span class="project-year" style="margin-left:auto;">April 2026</span>
+            </div>
+            <h2>Pharma Field Force Analytics</h2>
+            <p>The client's problem: zero return on a 20% headcount increase. The real problem: no framework to isolate which part of the field force was underperforming, or why.</p>
+            <p style="margin-top:1rem;">I designed the analytical structure from a client brief, building a PostgreSQL star-schema across 200 medical representatives, 500 doctors, and 6 zones. K-Means clustering classified MRs into 4 performance personas, each mapped to a distinct root cause. The synthesis: an 8× conversion gap and ₹45 L revenue opportunity within existing capacity, with zero incremental spend required.</p>
+            <div class="project-image-wrap">
+              <div class="project-img-placeholder" data-label="Add fieldforce_screenshot.jpg to assets/">
+                <div class="project-image-wrap">
+                  <img src="../assets/pharma_dashboard.png" alt="Field force analytics dashboard" />
+                </div>
+              </div>
+            </div>
+            <div class="project-impact">
+              <span class="impact-badge">200 MRs analysed</span>
+              <span class="impact-badge">500 doctors segmented</span>
+              <span class="impact-badge">8× conversion gap uncovered</span>
+              <span class="impact-badge">₹45 L opportunity identified</span>
+            </div>
+            <div class="project-tools" style="margin-top:1rem;">
+              <span>PostgreSQL</span><span>Python</span><span>K-Means Clustering</span><span>Power BI</span><span>Scikit-learn</span><span>Segmentation</span>
+            </div>
+          </div>
+          <div class="project-full-links">
+            <a href="https://github.com/Zeelbhadra" target="_blank" class="btn-primary" style="white-space:nowrap;">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">Zeel Bhadra</p>
+        <p class="footer-tagline">Turning data into decisions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/zeelbhadra" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/zeelbhadra" target="_blank">GitHub ↗</a>
+        <a href="mailto:zeelbhadra999@gmail.com">Email ↗</a>
+      </div>
+    </div>
+    <p class="footer-copy">© Zeel Bhadra</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

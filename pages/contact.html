@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <meta name="description" content="Get in touch with Zeel Bhadra — open to analytics and consulting opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav-logo">ZB</a>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="certifications.html" class="nav-link">Certifications</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="eyebrow page-hero-eyebrow">Let's talk</p>
+    <h1>Open to the<br/><em>right conversation.</em></h1>
+    <p class="lead">Whether it's a role, a project, a collaboration, or just a question about something I've built, reach out. I respond to thoughtful messages.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-wrap">
+
+        <div>
+          <p class="eyebrow" style="margin-bottom:1rem;">Currently looking for</p>
+          <h2 style="font-size:2rem; margin-bottom:1.5rem;">Analytics &<br/>Consulting roles</h2>
+          <p>I'm a final-year student graduating in May 2027, and I'm actively exploring internship and full-time opportunities in data analytics, business intelligence, and consulting. Particularly roles that involve translating ambiguous business problems into structured solutions.</p>
+
+          <div class="contact-info">
+
+            <a href="mailto:zeelbhadra999@gmail.com" target="_blank" class="contact-item" style="cursor:pointer;">
+              <span class="contact-icon">✉</span>
+              <div class="contact-item-body">
+                <strong>Email</strong>
+                <span>zeelbhadra999@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/zeelbhadra" target="_blank" class="contact-item" style="cursor:pointer;">
+              <span class="contact-icon">in</span>
+              <div class="contact-item-body">
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/zeelbhadra</span>
+              </div>
+            </a>
+            <a href="https://github.com/zeelbhadra" target="_blank" class="contact-item" style="cursor:pointer;">
+              <span class="contact-icon">⌥</span>
+              <div class="contact-item-body">
+                <strong>GitHub</strong>
+                <span>github.com/zeelbhadra</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwvjnwnb" method="POST">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="your@email.com" required />
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell me what you're thinking..." required></textarea>
+  </div>
+  <button type="submit" class="btn-primary" style="width:100%; border:none; font-family:var(--ff-mono); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer;">
+    Send Message
+  </button>
+</form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">Zeel Bhadra</p>
+        <p class="footer-tagline">Turning data into decisions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/zeelbhadra" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/zeelbhadra" target="_blank">GitHub ↗</a>
+        <a href="mailto:zeelbhadra999@gmail.com">Email ↗</a>
+      </div>
+    </div>
+    <p class="footer-copy">© Zeel Bhadra</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

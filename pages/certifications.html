@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications</title>
+  <meta name="description" content="Certifications and job simulations — Deloitte, Tata iQ, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .cert-simulation-card {
+      padding: 3rem; border: 1px solid var(--border);
+      border-radius: var(--r); background: var(--bg-card);
+      margin-bottom: 2rem;
+      transition: border-color var(--transition);
+    }
+    .cert-simulation-card:hover { border-color: var(--gold-dim); }
+    .cert-sim-header {
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .cert-sim-issuer {
+      font-family: var(--ff-mono); font-size: 0.62rem;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.5rem;
+    }
+    .cert-sim-card-header-right { text-align: right; }
+    .cert-sim-date { font-family: var(--ff-mono); font-size: 0.62rem; color: var(--muted); }
+    .cert-sim-desc { font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.5rem; }
+    .cert-tasks-title {
+      font-family: var(--ff-mono); font-size: 0.62rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .cert-task-list { display: flex; flex-direction: column; gap: 0.6rem; list-style: none; }
+    .cert-task-list li {
+      font-size: 0.9rem; padding: 0.7rem 1rem 0.7rem 2rem;
+      position: relative;
+      border: 1px solid var(--border); border-radius: var(--r);
+      color: rgba(242,239,233,0.75);
+      background: var(--surface);
+    }
+    .cert-task-list li::before {
+      content: '✓'; position: absolute; left: 0.75rem;
+      color: var(--gold); font-size: 0.75rem;
+    }
+    .cert-verify-row {
+      margin-top: 1.5rem; padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 0.75rem;
+    }
+    .cert-verify-code {
+      font-family: var(--ff-mono); font-size: 0.58rem;
+      letter-spacing: 0.06em; color: var(--muted);
+    }
+
+    .extra-certs-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem; margin-top: 1.5rem;
+    }
+    .extra-cert {
+      padding: 1.5rem; border: 1px solid var(--border);
+      border-radius: var(--r); background: var(--bg-card);
+      transition: border-color var(--transition);
+    }
+    .extra-cert:hover { border-color: var(--gold-dim); }
+    .extra-cert-issuer {
+      font-family: var(--ff-mono); font-size: 0.58rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.5rem;
+    }
+    .extra-cert h4 { font-size: 1rem; font-family: var(--ff-serif); color: var(--white); margin-bottom: 0.4rem; }
+    .extra-cert-date { font-family: var(--ff-mono); font-size: 0.6rem; color: var(--muted); }
+    .extra-cert-note { font-size: 0.82rem; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav-logo">ZB</a>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="certifications.html" class="nav-link active">Certifications</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="eyebrow page-hero-eyebrow">Credentials & Job Simulations</p>
+    <h1>Learning by<br/><em>doing the actual job.</em></h1>
+    <p class="lead">Every certificate here came from working through real business problems and not multiple-choice tests. Forage simulations mirror actual analyst workflows at the firms listed.</p>
+  </div>
+
+  <!-- FORAGE SIMULATIONS -->
+  <section class="section">
+    <div class="container">
+
+      <p class="eyebrow" style="margin-bottom:2rem;">Forage Job Simulations</p>
+
+      <!-- DELOITTE -->
+      <div class="cert-simulation-card reveal">
+        <div class="cert-sim-header">
+          <div>
+            <div class="cert-sim-issuer">Deloitte Australia · Forage</div>
+            <h2 style="font-size:1.8rem;">Data Analytics<br/>Job Simulation</h2>
+          </div>
+          <div class="cert-sim-card-header-right">
+            <div class="cert-sim-date">Completed June 17, 2025</div>
+            <div class="cert-sim-date" style="margin-top:0.3rem;">May – June 2025</div>
+          </div>
+        </div>
+
+        <p class="cert-sim-desc">
+          This simulation placed me inside Deloitte Australia's analytics practice, working through the kinds of problems a junior analyst encounters in the first months on the job. The work spanned two core areas that Deloitte's advisory teams rely on heavily: using data to investigate anomalies and support decision-making, and applying forensic technology to draw conclusions from structured datasets.
+        </p>
+
+        <p class="cert-tasks-title">Tasks completed</p>
+        <ul class="cert-task-list">
+          <li><strong>Data Analysis</strong> — structured and explored business datasets to surface patterns, anomalies, and actionable insights; practised translating raw data into recommendations in the format a consulting team would present to a client</li>
+          <li><strong>Forensic Technology</strong> — applied data interrogation techniques in the context of forensic investigation; worked through how analysts use data to support or challenge hypotheses in complex, ambiguous scenarios</li>
+        </ul>
+
+        <div class="cert-verify-row">
+          <span class="cert-issuer" style="font-size:0.6rem;">Issued by Forage</span>
+        </div>
+      </div>
+
+      <!-- TATA IQ -->
+      <div class="cert-simulation-card reveal">
+        <div class="cert-sim-header">
+          <div>
+            <div class="cert-sim-issuer">Tata iQ · Forage</div>
+            <h2 style="font-size:1.8rem;">Data Visualisation: Empowering Business<br/>with Effective Insights</h2>
+          </div>
+          <div class="cert-sim-card-header-right">
+            <div class="cert-sim-date">Completed May 31, 2026</div>
+            <div class="cert-sim-date" style="margin-top:0.3rem;">April 2025 – May 2026</div>
+          </div>
+        </div>
+
+        <p class="cert-sim-desc">
+          Tata iQ's simulation focused on one of the most underrated skills in analytics: deciding what to show, and how, before touching a visualisation tool. The programme built the deliberate thinking process a senior analyst uses, starting from the business scenario and ending at a visual that earns trust in a boardroom, not just a dashboard review.
+        </p>
+
+        <p class="cert-tasks-title">Tasks completed</p>
+        <ul class="cert-task-list">
+          <li><strong>Framing the Business Scenario</strong> — practised translating a stakeholder brief into a clear analytical question; identified what the decision-maker actually needed to see versus what the data made easy to show</li>
+          <li><strong>Choosing the Right Visuals</strong> — worked through the logic of chart selection for different data types and audience contexts; learned to resist the default chart in favour of the most honest representation of the underlying pattern</li>
+          <li><strong>Creating Effective Visuals</strong> — built visualisations with deliberate design choices — hierarchy, colour, annotation — that guide the reader's eye to the point that matters</li>
+          <li><strong>Communicating Insights and Analysis</strong> — synthesised findings into a coherent narrative for senior stakeholders; practised pairing the visual with the "so what?" that makes it actionable</li>
+        </ul>
+
+        <div class="cert-verify-row">
+          <span class="cert-issuer" style="font-size:0.6rem;">Issued by Forage</span>
+        </div>
+      </div>
+
+      <!-- OTHER CERTIFICATES -->
+      <div class="reveal" style="margin-top:3rem;">
+        <p class="eyebrow" style="margin-bottom:1.5rem;">Other Credentials & Achievements</p>
+        <div class="extra-certs-grid">
+
+          <div class="extra-cert">
+            <div class="extra-cert-issuer">Lingua Miles</div>
+            <h4>German Language — S1 Beginner</h4>
+            <div class="extra-cert-date">July 24, 2021 · Score: 88%</div>
+            <p class="extra-cert-note">Deutschfahr programme — Instructor: Siddhesh Dixit</p>
+          </div>
+
+          <div class="extra-cert">
+            <div class="extra-cert-issuer">DJS NSS · DJSCE</div>
+            <h4>NSS Camp 2025 — Certificate of Appreciation</h4>
+            <div class="extra-cert-date">Jan 22–28, 2025</div>
+            <p class="extra-cert-note"> Rural workstreams across surveys, medical camps, and solar installation at Dahanu</p>
+          </div>
+
+          <div class="extra-cert">
+            <div class="extra-cert-issuer">DJS NSS · DJSCE</div>
+            <h4>NSS Camp 2026 — Certificate of Appreciation</h4>
+            <div class="extra-cert-date">Jan 16–22, 2026</div>
+            <p class="extra-cert-note">Second consecutive year of 7-day community service camp focused on leadership, rural development, and social awareness.</p>
+          </div>
+
+          <div class="extra-cert">
+            <div class="extra-cert-issuer">I For Change Foundation</div>
+            <h4>Umeed Ki Udaan — Volunteer</h4>
+            <div class="extra-cert-date">January 5, 2025</div>
+            <p class="extra-cert-note">Compassionate contribution recognised by directors Meet Shah and Parth Shah</p>
+          </div>
+
+          <div class="extra-cert">
+            <div class="extra-cert-issuer">ConnectFor</div>
+            <h4>Paper Bag Distribution Drive — Volunteer</h4>
+            <div class="extra-cert-date">June 22, 2025 · Mumbai</div>
+            <p class="extra-cert-note">4-hour community activity · ConnectFor </p>
+          </div>
+
+          <div class="extra-cert">
+            <div class="extra-cert-issuer">ConnectFor</div>
+            <h4>Grainathon 3.0</h4>
+            <div class="extra-cert-date">October 13, 2025 · Mumbai</div>
+            <p class="extra-cert-note">Volunteered for collection and distribution of grains to underprivileged communities.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">Zeel Bhadra</p>
+        <p class="footer-tagline">Turning data into decisions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/zeelbhadra" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/zeelbhadra" target="_blank">GitHub ↗</a>
+        <a href="mailto:zeelbhadra999@gmail.com">Email ↗</a>
+      </div>
+    </div>
+    <p class="footer-copy">© Zeel Bhadra</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

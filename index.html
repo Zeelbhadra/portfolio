@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeel Bhadra- Portfolio</title>
+  <meta name="description" content="Final-year data science student turning messy business problems into clear, actionable recommendations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">ZB</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="pages/about.html" class="nav-link">About</a>
+      <a href="pages/projects.html" class="nav-link">Projects</a>
+      <a href="pages/certifications.html" class="nav-link">Certifications</a>
+      <a href="pages/contact.html" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/projects.html">Projects</a>
+    <a href="pages/certifications.html">Certifications</a>
+    <a href="pages/contact.html">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Hi, I'm <em>Zeel.</em>
+      </h1>
+      <p class="hero-sub">
+        A final-year data science student drawn to the quiet space between business questions and the data that answers them. I build analytics frameworks, decision tools, and dashboards. Chasing roles where structured thinking becomes a clear recommendation someone can act on tomorrow.
+      </p>
+      <div class="hero-cta">
+        <a href="pages/about.html" class="btn-primary">About Me</a>
+        <a href="pages/projects.html" class="btn-ghost">See Projects</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-photo-frame">
+        <img src="assets/profile.jpg" alt="Zeel Bhadra" class="hero-photo" id="heroPhoto" onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex'" />
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <span>ZB</span>
+          <p>Add profile.jpg<br/>to assets/</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS
+  <section class="stats-bar">
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-label">Analytics Projects</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">₹1.32Cr</span>
+      <span class="stat-label">Revenue Leakage Quantified</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">1000+</span>
+      <span class="stat-label">Blood Units Organised</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">7</span>
+      <span class="stat-label">Languages Spoken</span>
+    </div>
+  </section> -->
+
+  <!-- WHAT I DO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What I do</p>
+        <h2 class="section-title">Structured thinking.<br/><em>Clear stories.</em></h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon">◈</div>
+          <h3>Business Problem Decomposition</h3>
+          <p>I don't start with data. I start with the question behind the question, structuring ambiguous briefs into frameworks before writing a line of SQL.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">◉</div>
+          <h3>Analytics & BI</h3>
+          <p>Python · SQL · Power BI · DAX. From clustering and risk scoring to executive dashboards built on star-schema models that finance teams can trust.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">◎</div>
+          <h3>Insight Communication</h3>
+          <p>Every number I surface ends as a recommendation. I write executive memos that make decisions obvious, not just findings visible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">Zeel Bhadra</p>
+        <p class="footer-tagline">Turning data into decisions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/zeelbhadra" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/zeelbhadra" target="_blank">GitHub ↗</a>
+        <a href="mailto:zeelbhadra999@gmail.com">Email ↗</a>
+      </div>
+    </div>
+    <p class="footer-copy">© Zeel Bhadra</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
