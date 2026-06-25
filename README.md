@@ -3,7 +3,7 @@
 **Live portfolio hosted on Vercel.**
 
 ## Tech Stack
-Plain HTML · CSS · Vanilla JS — no build step needed.
+Plain HTML · CSS · Vanilla JS 
 
 ## Folder Structure
 ```
@@ -19,16 +19,16 @@ portfolio/
 │   ├── certifications.html
 │   └── contact.html
 ├── assets/
-│   ├── profile.jpg         ← Profile photo (already added)
-│   ├── award_nss.jpg       ← NSS trophy photo (already added)
-│   ├── nss_group.jpg       ← NSS rural camp group photo (already added)
-│   ├── s4ds_group.jpg      ← S4DS team group photo (already added)
+│   ├── profile.jpg        
+│   ├── award_nss.jpg      
+│   ├── nss_group.jpg      
+│   ├── s4ds_group.jpg     
 │   ├── zeel_resume_zs_daa.pdf
 │   │
 │   │   — Add project screenshots here:
-│   ├── supplylens_screenshot.jpg   ← SupplyLens dashboard screenshot
-│   ├── ecommerce_screenshot.jpg    ← Beauty & PC dashboard screenshot
-│   └── fieldforce_screenshot.jpg   ← Field Force dashboard screenshot
+│   ├── supplylens_screenshot.jpg   
+│   ├── ecommerce_screenshot.jpg   
+│   └── fieldforce_screenshot.jpg   
 └── vercel.json
 ```
 
