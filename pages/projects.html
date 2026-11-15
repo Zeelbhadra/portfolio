@@ -7,7 +7,7 @@
   <meta name="description" content="Selected analytics projects across pharma, e-commerce, and supply chain." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -18,7 +18,7 @@
       <a href="../index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link">About</a>
       <a href="projects.html" class="nav-link active">Projects</a>
-      <a href="certifications.html" class="nav-link">Certifications</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
       <a href="contact.html" class="nav-link">Contact</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -30,7 +30,7 @@
     <a href="../index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
-    <a href="certifications.html">Certifications</a>
+    <a href="achievements.html">Achievements</a>
     <a href="contact.html">Contact</a>
   </div>
 
@@ -45,6 +45,37 @@
   <section class="section">
     <div class="container projects-full">
       <div class="projects-full-grid">
+
+        <!-- PROJECT 0: CareerCompass -->
+        <article class="project-full-card reveal">
+          <div class="project-full-left">
+            <div class="project-meta" style="grid-column: unset; justify-content: flex-start;">
+              <span class="project-tag">AI · Career Tech</span>
+              <span class="project-year" style="margin-left:auto;">Aug 2026 – Present</span>
+            </div>
+            <h2>CareerCompass</h2>
+            <p>Built an AI-powered two-sided job-matching platform using a 6-agent workflow to automate resume parsing, job ingestion, matching, skill-gap analysis and course recommendations for students over job postings; E5 embeddings (NDCG@5 0.756 vs. TF-IDF 0.602) feed an explainable Logistic Regression model.</p>
+            <p style="margin-top:1rem;">Integrated Gemini LLM explanations validated line-by-line against SHAP evidence, plus peer-cohort benchmarking; evaluated against 5 baselines on a held-out split (hybrid NDCG@10 0.862), with 1.85 s median response.</p>
+            <div class="project-gallery">
+              <figure><img src="../assets/careercompass_overview.png" alt="CareerCompass overview dashboard" /><figcaption>Overview - employability score and ranked jobs</figcaption></figure>
+              <figure><img src="../assets/careercompass_skillgaps.png" alt="CareerCompass skill gaps" /><figcaption>Skill gaps - what each job needs that is missing</figcaption></figure>
+              <figure><img src="../assets/careercompass_benchmark.png" alt="CareerCompass peer benchmark" /><figcaption>Benchmark - comparison with similar students</figcaption></figure>
+              <figure><img src="../assets/careercompass_login.png" alt="CareerCompass login" /><figcaption>Two-sided login - students and companies</figcaption></figure>
+            </div>
+            <div class="project-impact" style="margin-top:1.5rem;">
+              <span class="impact-badge">6-agent workflow</span>
+              <span class="impact-badge">E5 NDCG@5 0.756 vs TF-IDF 0.602</span>
+              <span class="impact-badge">Hybrid NDCG@10 0.862</span>
+              <span class="impact-badge">1.85 s median response</span>
+            </div>
+            <div class="project-tools" style="margin-top:1rem;">
+              <span>Python</span><span>E5 Embeddings</span><span>Logistic Regression</span><span>SHAP</span><span>Gemini</span><span>Multi-Agent</span>
+            </div>
+          </div>
+          <div class="project-full-links">
+            <a href="https://github.com/SaarthakKhamkar11/Student-Employabilty" target="_blank" class="btn-primary" style="white-space:nowrap;">GitHub ↗</a>
+          </div>
+        </article>
 
         <!-- PROJECT 1: SupplyLens -->
         <article class="project-full-card reveal">

@@ -7,7 +7,7 @@
   <meta name="description" content="Final-year data science student turning messy business problems into clear, actionable recommendations." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -19,7 +19,7 @@
       <a href="index.html" class="nav-link active">Home</a>
       <a href="pages/about.html" class="nav-link">About</a>
       <a href="pages/projects.html" class="nav-link">Projects</a>
-      <a href="pages/certifications.html" class="nav-link">Certifications</a>
+      <a href="pages/achievements.html" class="nav-link">Achievements</a>
       <a href="pages/contact.html" class="nav-link">Contact</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -32,7 +32,7 @@
     <a href="index.html">Home</a>
     <a href="pages/about.html">About</a>
     <a href="pages/projects.html">Projects</a>
-    <a href="pages/certifications.html">Certifications</a>
+    <a href="pages/achievements.html">Achievements</a>
     <a href="pages/contact.html">Contact</a>
   </div>
 
@@ -111,6 +111,27 @@
     </div>
   </section>
 
+
+  <!-- EXPERIENCE -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <p class="eyebrow" style="margin-bottom:1.5rem;">Internship Experience</p>
+      <div class="leadership-card reveal">
+        <div class="leadership-card-header">
+          <div>
+            <div class="leadership-role">Research & Data Science Intern</div>
+            <h3>Redkross Research Foundation</h3>
+          </div>
+          <span class="leadership-period">Feb 2026 – Apr 2026 · Remote</span>
+        </div>
+        <ul>
+          <li>Engineered PaperLens, an end-to-end research intelligence platform that ingests papers from arXiv and Semantic Scholar and answers questions with page-level citations through a RAG pipeline.</li>
+          <li>Benchmarked 5 retrieval architectures (TF-IDF, SBERT, E5, BGE, Hybrid) on held-out datasets; shipped Hybrid TF-IDF + E5 (0.698 nDCG@10) with an automatic TF-IDF fallback for reliability.</li>
+          <li>Built a six-agent orchestration framework with FAISS indexing, SHAP/LIME relevance explanations and caching, lifting throughput from ~20 to 38 queries/sec at 8 concurrent clients.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">

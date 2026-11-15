@@ -16,14 +16,14 @@ portfolio/
 ├── pages/
 │   ├── about.html
 │   ├── projects.html
-│   ├── certifications.html
+│   ├── achievements.html
 │   └── contact.html
 ├── assets/
 │   ├── profile.jpg        
 │   ├── award_nss.jpg      
 │   ├── nss_group.jpg      
 │   ├── s4ds_group.jpg     
-│   ├── zeel_resume_zs_daa.pdf
+│   ├── CV.pdf
 │   │
 │   │   — Add project screenshots here:
 │   ├── supplylens_screenshot.jpg   

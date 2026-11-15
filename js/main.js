@@ -51,9 +51,9 @@ if (revealEls.length) {
 }
 
 // --- Active nav link ---
-const currentPath = window.location.pathname.split('/').pop();
+const currentPath = window.location.pathname.split('/').pop().replace(/\.html$/, '');
 document.querySelectorAll('.nav-link').forEach(link => {
-  const href = link.getAttribute('href').split('/').pop();
-  link.classList.toggle('active', href === currentPath || (currentPath === '' && href === 'index.html'));
+  const href = link.getAttribute('href').split('/').pop().replace(/\.html$/, '');
+  link.classList.toggle('active', href === currentPath || (currentPath === '' && href === 'index'));
 });
 

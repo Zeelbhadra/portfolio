@@ -7,21 +7,21 @@
 /* --- RESET & ROOT --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg:        #0d0d0d;
-  --bg-card:   #141414;
-  --bg-dark:   #080808;
-  --surface:   #1a1a1a;
-  --border:    rgba(255,255,255,0.08);
-  --border-md: rgba(255,255,255,0.14);
-  --gold:      #c9a96e;
-  --gold-dim:  #8a6f42;
-  --white:     #f2efe9;
-  --muted:     #888882;
-  --accent:    #c9a96e;
-  --ff-serif:  'Cormorant Garamond', Georgia, serif;
-  --ff-sans:   'DM Sans', system-ui, sans-serif;
-  --ff-mono:   'DM Mono', monospace;
-  --r:         6px;
+  --bg:        #f6f7fb;
+  --bg-card:   #ffffff;
+  --bg-dark:   #e9edf7;
+  --surface:   #eef1f8;
+  --border:    rgba(15,23,42,0.12);
+  --border-md: rgba(15,23,42,0.22);
+  --gold:      #3b3fd8;   /* primary accent (indigo) */
+  --gold-dim:  #8b93f0;
+  --white:     #0f172a;   /* main text colour */
+  --muted:     #4b5568;
+  --accent:    #3b3fd8;
+  --ff-serif:  'Plus Jakarta Sans', system-ui, sans-serif;
+  --ff-sans:   'Inter', system-ui, sans-serif;
+  --ff-mono:   'Inter', system-ui, sans-serif;
+  --r:         10px;
   --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -620,3 +620,94 @@ p { font-size: 1.05rem; }
     text-align: left;
   }
 }
+
+/* =====================================================
+   READABILITY THEME — light palette, clearer type scale
+   ===================================================== */
+html { font-size: 18px; }
+body { font-weight: 400; line-height: 1.7; color: #0f172a; }
+p { font-size: 1.05rem; color: #334155; line-height: 1.75; }
+em { font-style: normal; color: var(--gold); }
+
+h1, h2, h3 { font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: #0f172a; }
+h1 { font-size: clamp(2.8rem, 6vw, 4.6rem); }
+h2 { font-size: clamp(2.1rem, 4vw, 3.1rem); }
+h3 { font-size: clamp(1.45rem, 2.4vw, 1.9rem); }
+.pillar h3 { font-size: 1.4rem; }
+.cert-card h3 { font-size: 1.4rem; }
+.cert-simulation-card h2, .extra-cert h4 { color: #0f172a; }
+.extra-cert h4 { font-size: 1.2rem; font-weight: 700; }
+.project-card.featured h3 { font-size: 2rem; }
+
+/* labels / small text: bigger, bolder, no tiny caps */
+.eyebrow { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; color: var(--gold); }
+.nav-logo { font-weight: 800; color: var(--gold); }
+.nav { background: rgba(246,247,251,0.92); border-bottom: 1px solid var(--border); }
+.nav-link { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; color: #4b5568; }
+.nav-link:hover, .nav-link.active { color: #0f172a; }
+.nav-link::after { height: 2px; background: var(--gold); bottom: -6px; }
+.nav-toggle span { background: #0f172a; height: 2px; }
+.mobile-menu a { font-size: 0.95rem; font-weight: 600; }
+.btn-primary, .btn-ghost { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; }
+.btn-primary { background: var(--gold); color: #fff; border-color: var(--gold); }
+.btn-primary:hover { background: transparent; color: var(--gold); }
+.btn-ghost { color: #0f172a; border-color: var(--border-md); }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-sub { font-size: 1.15rem; }
+.page-hero .lead { font-size: 1.15rem; color: #334155; }
+.hero-photo-frame { border-color: var(--gold-dim); }
+
+.project-tag, .cert-issuer, .cert-sim-issuer, .extra-cert-issuer,
+.leadership-role, .skills-card-title, .skills-block h4, .project-link {
+  font-size: 0.8rem !important; font-weight: 700; letter-spacing: 0.08em; color: var(--gold);
+}
+.project-tag { border-color: var(--gold-dim); }
+.project-year, .leadership-period, .cert-sim-date, .extra-cert-date, .cert-date,
+.leadership-photo-caption, .footer-tagline, .footer-copy, .cert-verify, .cert-verify-code {
+  font-size: 0.82rem !important; font-weight: 500; color: var(--muted);
+}
+.cert-tasks-title { font-size: 0.82rem !important; font-weight: 700; color: var(--muted); }
+.skill-tag { font-size: 0.85rem; font-weight: 500; padding: 0.35rem 0.85rem; color: #1e293b; background: #fff; border-color: var(--border-md); }
+.skill-tag:hover { border-color: var(--gold); color: var(--gold); }
+.project-tools span { font-size: 0.82rem; font-weight: 500; background: var(--surface); color: #1e293b; padding: 0.3rem 0.7rem; }
+.impact-badge { font-size: 0.85rem; font-weight: 600; background: rgba(59,63,216,0.08); border-color: var(--gold-dim); color: #2a2db5; }
+.footer-links a { font-size: 0.85rem; font-weight: 600; color: #334155; }
+.footer-links a:hover { color: var(--gold); }
+.footer-logo { font-weight: 800; }
+.form-group label { font-size: 0.8rem; font-weight: 600; }
+.contact-item-body a, .contact-item-body span { font-size: 0.9rem; color: #334155; }
+.contact-item-body strong { font-size: 1rem; font-weight: 600; }
+
+/* body-size text in cards */
+.pillar p { font-size: 1rem; }
+.leadership-card ul li, .cert-tasks li, .cert-task-list li { font-size: 1rem; color: #1e293b; line-height: 1.65; }
+.leadership-card ul li::before { color: var(--gold); }
+.cert-sim-desc, .extra-cert-note { font-size: 1rem; color: #334155; }
+.extra-cert-note { font-size: 0.95rem; }
+
+/* surfaces */
+.pillar, .project-card, .project-full-card, .leadership-card, .skills-card,
+.cert-card, .cert-simulation-card, .extra-cert, .contact-item {
+  box-shadow: 0 1px 3px rgba(15,23,42,0.06), 0 4px 14px rgba(15,23,42,0.04);
+}
+.cert-task-list li { background: var(--surface); }
+.section-dark { background: var(--bg-dark); }
+.footer { background: #fff; }
+::-webkit-scrollbar { width: 8px; }
+
+/* --- PROJECT GALLERY (2x2 screenshots) --- */
+.project-gallery {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; margin: 1.5rem 0 0.5rem;
+}
+.project-gallery figure {
+  margin: 0; border: 1px solid var(--border); border-radius: var(--r);
+  overflow: hidden; background: var(--bg-card);
+}
+.project-gallery img { width: 100%; height: auto; display: block; }
+.project-gallery figcaption {
+  font-size: 0.85rem; font-weight: 600; color: var(--muted);
+  padding: 0.6rem 0.9rem; border-top: 1px solid var(--border);
+}
+@media (max-width: 700px) { .project-gallery { grid-template-columns: 1fr; } }
