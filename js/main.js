@@ -47,7 +47,12 @@ if (revealEls.length) {
       }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-  revealEls.forEach(el => observer.observe(el));
+  revealEls.forEach(el => {
+    // stagger siblings for a smooth cascade
+    const sibs = el.parentElement ? [...el.parentElement.children].filter(c => c.classList.contains('reveal')) : [el];
+    el.style.transitionDelay = (Math.min(sibs.indexOf(el), 4) * 90) + 'ms';
+    observer.observe(el);
+  });
 }
 
 // --- Active nav link ---
@@ -56,4 +61,5 @@ document.querySelectorAll('.nav-link').forEach(link => {
   const href = link.getAttribute('href').split('/').pop().replace(/\.html$/, '');
   link.classList.toggle('active', href === currentPath || (currentPath === '' && href === 'index'));
 });
+
 
